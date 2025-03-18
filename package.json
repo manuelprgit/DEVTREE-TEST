@@ -12,9 +12,10 @@
   "description": "",
   "dependencies": {
     "@types/express": "^5.0.0",
+    "colors": "^1.4.0",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mognoose": "^1.0.3",
+    "mongoose": "^8.12.1",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
