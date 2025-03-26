@@ -1,5 +1,12 @@
 import mongoose, { Schema } from "mongoose";
 
+interface IUser {
+  handle:string;
+  name:string;
+  password:string;
+  email:string;
+}
+
 const userSchema = new Schema({
   handle:{
     type:String,
@@ -25,5 +32,4 @@ const userSchema = new Schema({
   }
 })
 
-
-export const User = mongoose.model('User', userSchema);
+export const User = mongoose.model<IUser>('User', userSchema);
