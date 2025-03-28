@@ -1,9 +1,9 @@
-import { Router, Response, Request } from "express";
-import { registerUser } from "./handlers";
+import { Router } from "express";
+import { createAccount } from "./handlers";
 
 
 const router = Router();
 
-router.post('/api/auth/register', registerUser);
+router.post('/api/auth/register', createAccount);
 
 export default router;
