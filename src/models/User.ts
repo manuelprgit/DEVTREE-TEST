@@ -12,7 +12,8 @@ const userSchema = new Schema({
     type:String,
     trim:true,
     unique:true,
-    require:true
+    require:true,
+    lowercase: true
   },
   name: {
     type: String,
@@ -23,6 +24,7 @@ const userSchema = new Schema({
     type: String,
     trim: true,
     require: true,
+    lowercase: true,
     unique: true
   },
   password: {
