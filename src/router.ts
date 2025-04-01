@@ -8,10 +8,10 @@ const router = Router();
 router.post('/api/auth/register', 
     body('handle')
         .notEmpty()
-        .withMessage('El usuario no debe estar vacio'),
+        .withMessage('El usuario no debe estar vacío'),
     body('email')
         .notEmpty()
-        .withMessage('El correo no debe estar vacio'),
+        .withMessage('El correo no debe estar vacío'),
     createAccount
 );
 
